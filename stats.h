@@ -4,8 +4,8 @@ struct Stats compute_statistics(const float* numberset, int setlength);
 typedef void (*alerter_funcptr)();
 void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats);
 
-void emailAlerter(int x);
-void ledAlerter(int y);
+void emailAlerter();
+void ledAlerter();
 
 extern int emailAlertCallCount;
 extern int ledAlertCallCount;
