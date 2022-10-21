@@ -17,7 +17,7 @@ void emailAlerter()
 }
 void ledAlerter()
 {
-    iny y;
+    int y;
     if(y>100)
     {
      ledAlertCallCount++;
