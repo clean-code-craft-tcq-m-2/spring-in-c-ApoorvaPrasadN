@@ -24,9 +24,9 @@ TEST_CASE("average is NaN for empty array") {
     float epsilon = 0.001;
     if(computedStats.average == NAN)
     {
-    REQUIRE(abs(computedStats.average - 4.525) < epsilon);
-    REQUIRE(abs(computedStats.max - 8.9) < epsilon);
-    REQUIRE(abs(computedStats.min - 1.5) < epsilon); 
+    REQUIRE(abs(computedStats.average) < epsilon);
+    REQUIRE(abs(computedStats.max) < epsilon);
+    REQUIRE(abs(computedStats.min) < epsilon); 
     }
     //Design the REQUIRE statement here.
     //Use https://stackoverflow.com/questions/1923837/how-to-use-nan-and-inf-in-c
