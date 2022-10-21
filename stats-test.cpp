@@ -21,6 +21,7 @@ TEST_CASE("average is NaN for empty array") {
     //All fields of computedStats (average, max, min) must be
     //NAN (not-a-number), as defined in math.h
     float average = computedStats.average;
+    float epsilon = 0.001;
     if(computedStats.average == NAN)
     {
     REQUIRE(abs(computedStats.average - 4.525) < epsilon);
